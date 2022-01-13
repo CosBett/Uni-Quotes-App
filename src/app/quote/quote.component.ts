@@ -15,6 +15,23 @@ export class QuoteComponent implements OnInit {
     new Quote('The most damaging phrase in the languange is .. it is always been done this way', 'Grace Hopper', 'Cosmas Bett', new Date(2021, 12, 28), 0, 0),
     new Quote('Programing is not about what you know ; it is about what you can figure out', 'Chris Pine', 'Cosmas Bett', new Date(2022, 1, 1), 0, 0),
   ]
+
+  deleteDatails(Complete: any, index: any) {
+    if (Complete) {
+      let toDelete = confirm(`Are you sure you want to delete Quote`)
+      if (toDelete) {
+        this.quotes.splice(index, 1);
+      }
+    }
+  }
+  inspired(i: number) {
+    this.quotes[i].votes = this.quotes[i].votes + 1
+    // this.quotes.upVote++
+    if (this.quotes[i].votes > this.totalVotes) {
+      this.totalVotes = this.quotes[i].votes
+    }
+  }
+
   constructor() { }
 
   ngOnInit(): void {

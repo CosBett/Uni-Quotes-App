@@ -8,6 +8,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { QuoteComponent } from './quote/quote.component';
 import { FormComponent } from './form/form.component';
 import { DeleteComponent } from './delete/delete.component';
+import { DownVoteComponent } from './down-vote/down-vote.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { DeleteComponent } from './delete/delete.component';
     LandingPageComponent,
     QuoteComponent,
     FormComponent,
-    DeleteComponent
+    DeleteComponent,
+    DownVoteComponent
   ],
   imports: [
     BrowserModule,

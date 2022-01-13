@@ -1,0 +1,20 @@
+* {
+  background-color: rgba(0, 0, 0, 0.829);
+}
+
+.navbar {
+  height: 10vh;
+}
+
+#top-navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+#nav-color {
+  color: #24E493;
+  font-family: 'Luxurious Roman', cursive;
+  border-bottom: white;
+  font-size: 20px;
+}

@@ -1,5 +1,5 @@
 * {
-  background-color: rgba(0, 0, 0, 0.829);
+  background-color: rgba(0, 0, 0, 0.952);
 }
 
 .navbar {
@@ -9,12 +9,10 @@
 #top-navbar {
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
 }
 
 #nav-color {
   color: #24E493;
   font-family: 'Luxurious Roman', cursive;
-  border-bottom: white;
-  font-size: 20px;
+  font-size: 18px;
 }

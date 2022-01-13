@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-delete',
@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./delete.component.css']
 })
 export class DeleteComponent implements OnInit {
-
+  @Output() Complete = new EventEmitter<boolean>()
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  myDelete(complete: boolean) {
+
+    this.Complete.emit(complete)
   }
 
 }

@@ -9,6 +9,7 @@ import { QuoteComponent } from './quote/quote.component';
 import { FormComponent } from './form/form.component';
 import { DeleteComponent } from './delete/delete.component';
 import { DownVoteComponent } from './down-vote/down-vote.component';
+import { QuoteDetailsComponent } from './quote-details/quote-details.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { DownVoteComponent } from './down-vote/down-vote.component';
     QuoteComponent,
     FormComponent,
     DeleteComponent,
-    DownVoteComponent
+    DownVoteComponent,
+    QuoteDetailsComponent
   ],
   imports: [
     BrowserModule,

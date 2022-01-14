@@ -15,7 +15,7 @@
 
       <div class="d-flex justify-content-around">
         <button id="thumb" (click)="inspired(i)" class="btn"><i class="fa fa-thumbs-up"></i > {{quote.votes}}</button>
-        <!-- <app-down-vote></app-down-vote>  -->
+        <app-down-vote></app-down-vote>
         <app-delete (Complete)="deleteDatails($event,i)"></app-delete>
 
       </div>

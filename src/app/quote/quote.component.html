@@ -2,7 +2,6 @@
   <h2 id="display-title">Vote for the Most Inspiring Quote!</h2>
   <div class="col-md-4 p-2 mt-2" *ngFor="let quote of quotes; let i= index">
 
-    <!-- <app-quote-highest *ngIf="quote.likevotes === count && quote.likevotes>0 && quote.showAllQuotes" [theQuote]="quote"></app-quote-highest> -->
     <div class="card p-2">
       <div id="highlight" class="card p-2" appVoteHighlight *ngIf="quote.votes === totalVotes && quote.votes>0 ">
         <p> Highest Voted inspiring quote!</p>

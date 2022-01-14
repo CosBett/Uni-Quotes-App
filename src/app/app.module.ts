@@ -11,6 +11,7 @@ import { DeleteComponent } from './delete/delete.component';
 import { DownVoteComponent } from './down-vote/down-vote.component';
 import { QuoteDetailsComponent } from './quote-details/quote-details.component';
 import { VoteHighlightDirective } from './vote-highlight.directive';
+import { DateAgoPipe } from './date-ago.pipe';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { VoteHighlightDirective } from './vote-highlight.directive';
     DeleteComponent,
     DownVoteComponent,
     QuoteDetailsComponent,
-    VoteHighlightDirective
+    VoteHighlightDirective,
+    DateAgoPipe
   ],
   imports: [
     BrowserModule,

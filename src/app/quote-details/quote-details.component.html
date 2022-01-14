@@ -1,1 +1,11 @@
-<p>quote-details works!</p>
+<div>
+  <p> <em>Posted By :</em><span id="post">{{quotes.postedBy}}</span></p>
+  <!-- <p><em>Time elapse :</em><span id="post">{{quotes.timePosted|dateAgo}} Days since Posted.</span></p> -->
+
+  <div>
+    <button id="thumb" (click)="inspired()" class="btn"><i class="fa fa-thumbs-up"></i></button><span>{{quotes.upVote}}</span>
+    <button (click)="terrible()" class="btn"><i class="fa fa-thumbs-down"></i></button>
+    <span>{{quotes.downVote}}</span>
+    <div id="delete" (click)="quoteDelete(true)" class="btn" id="delete">Delete <i class="fa fa-trash"></i></div>
+
+  </div>

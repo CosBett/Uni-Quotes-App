@@ -10,6 +10,7 @@ import { FormComponent } from './form/form.component';
 import { DeleteComponent } from './delete/delete.component';
 import { DownVoteComponent } from './down-vote/down-vote.component';
 import { QuoteDetailsComponent } from './quote-details/quote-details.component';
+import { VoteHighlightDirective } from './vote-highlight.directive';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { QuoteDetailsComponent } from './quote-details/quote-details.component';
     FormComponent,
     DeleteComponent,
     DownVoteComponent,
-    QuoteDetailsComponent
+    QuoteDetailsComponent,
+    VoteHighlightDirective
   ],
   imports: [
     BrowserModule,

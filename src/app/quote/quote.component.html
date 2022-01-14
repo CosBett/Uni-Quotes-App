@@ -12,12 +12,12 @@
       <p id="author"> {{quote.author}}</p>
       <p> <em id="em">Posted By :</em><span id="post">{{quote.postedBy}}</span></p>
       <!-- <p><em id="em">Time elapse :</em><span id="post">{{quote.timePosted|dateAgo}} Days since Posted.</span></p> -->
-
-      <div class="d-flex justify-content-around">
-        <button id="thumb" (click)="inspired(i)" class="btn"><i class="fa fa-thumbs-up"></i > {{quote.votes}}</button>
-        <app-down-vote></app-down-vote>
+      <div class="d-flex justify-content-between">
+        <div class="d-flex justify-content-around">
+          <button id="thumb" (click)="inspired(i)" class="btn"><i class="fa fa-thumbs-up"></i > {{quote.votes}}</button>
+          <app-down-vote></app-down-vote>
+        </div>
         <app-delete (Complete)="deleteDatails($event,i)"></app-delete>
-
       </div>
     </div>
   </div>

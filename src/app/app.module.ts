@@ -12,6 +12,7 @@ import { DownVoteComponent } from './down-vote/down-vote.component';
 import { QuoteDetailsComponent } from './quote-details/quote-details.component';
 import { VoteHighlightDirective } from './vote-highlight.directive';
 import { DateAgoPipe } from './date-ago.pipe';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { DateAgoPipe } from './date-ago.pipe';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

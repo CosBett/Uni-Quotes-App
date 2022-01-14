@@ -1,27 +1,27 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { from } from 'rxjs';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Quote } from '../quote';
+
 @Component({
   selector: 'app-form',
   templateUrl: './form.component.html',
   styleUrls: ['./form.component.css']
 })
 export class FormComponent implements OnInit {
-  [x: string]: any;
-  @Input()
-  quote!: Quote;
+
+  newQuote = new Quote("", "", "", new Date(), 0, 0)
+
   @Output() addQuote = new EventEmitter<Quote>();
 
-  submitQuote(form: any) {
-    this.addQuote.emit(form)
+  submitQuote() {
+    this.addQuote.emit(this.newQuote);
 
-    form.reset()
   }
+
 
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
 }

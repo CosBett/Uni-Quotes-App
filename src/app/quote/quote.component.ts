@@ -31,8 +31,9 @@ export class QuoteComponent implements OnInit {
       this.totalVotes = this.quotes[i].votes
     }
   }
-  addNewQuote(newQuote: any) {
-    this.quotes.push(new Quote(newQuote.description, newQuote.author, newQuote.postedBy, newQuote.timePosted, 0, 0))
+  addNewQuote(quote: any) {
+    this.quotes.push(quote)
+
   }
   showDet(index: any) {
     this.quotes[index].showDetails = !this.quotes[index].showDetails;

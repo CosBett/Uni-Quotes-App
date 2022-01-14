@@ -7,10 +7,9 @@
         <p> Highest Voted inspiring quote!</p>
       </div>
       <p id="quote-des"><em>"</em><span>{{quote.description}}</span><em>"</em></p>
-      <p id="quote-des"><em>"</em><span>{{quote.description}}</span><em>"</em></p>
       <p id="author"> {{quote.author}}</p>
       <p> <em id="em">Posted By :</em><span id="post">{{quote.postedBy}}</span></p>
-      <!-- <p><em id="em">Time elapse :</em><span id="post">{{quote.timePosted|dateAgo}} Days since Posted.</span></p> -->
+      <p><em id="em">Time elapse :</em><span id="post">{{quote.timePosted|dateAgo}} Days since Posted.</span></p>
       <div class="d-flex justify-content-between">
         <div class="d-flex justify-content-around">
           <button id="thumb" (click)="inspired(i)" class="btn"><i class="fa fa-thumbs-up"></i > {{quote.votes}}</button>

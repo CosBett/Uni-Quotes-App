@@ -1,36 +1,45 @@
 <div class="container mt-5">
   <div class="row">
     <div class="col-md-6">
-      <img src="../../assets/form.jpg" class="img-fluid" alt="Quote Add image" id="form-img">
+      <img src="../../assets/form.jpg" class="img-fluid" alt="form.jpg" id="form-img">
     </div>
     <div class="col-md-6">
       <div class="card ">
         <h3 class="text-center">Create a new Quote</h3>
         <hr>
-        <form (ngSubmit)='submitQuote(quoteForm)' #quoteForm=''>
+        <form (ngSubmit)="submitQuote()" #goalForm='ngForm'>
           <div class="form-group">
-            <label for=" description"> Quote Description</label>
-            <textarea type="text" class="form-control" id="description" rows="2" name="description" ngModel required placeholder="Write your quote here"></textarea>
 
-            <div class="form-group">
-              <label for="author">Author</label>
-              <input class="form-control" id="author" ngModel name="author" required placeholder="Author's Name">
-            </div>
-            <div class="form-group">
-              <label for="postedBy">Posted By</label>
-              <input class="form-control" id="postedBy" name="postedBy" ngModel required placeholder="Your Name">
-              <div class="form-group">
-                <label for="timeposted">Time Posted</label>
-                <input type='date' id="timePosted" ngModel name="timePosted" #timePosted="" required>
-                <!-- <div [hidden]="timePosted.valid || timePosted.pristine" class="alert alert-danger">
-                  <p>Date is required</p>
-                </div> -->
-              </div>
-              <div class="dflex justify-content-center">
-                <button type="submit" class="btn">Add Quote</button>
-              </div>
+            <label for="description">Description</label>
+            <textarea class="form-control" id="description" rows="2" [(ngModel)]="newQuote.description" description="description" #description="ngModel" required></textarea>
+            <div [hidden]="description.valid || description.pristine" class="alert alert-danger">
+              <p>Quote is required</p>
             </div>
           </div>
+          <div class="form-group">
+            <label for="author">Author</label>
+            <input type="text" class="form-control" id="author" [(ngModel)]="newQuote.author" name="author" #author='ngModel' required>
+            <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
+              <p>Author is required</p>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="postedBy">Posted By</label>
+            <input type="text" class="form-control" id="postedBy" [(ngModel)]="newQuote.postedBy" name="postedBy" #postedBy='ngModel' required>
+            <div [hidden]="postedBy.valid || postedBy.pristine" class="alert alert-danger">
+              <p>Your name is required</p>
+            </div>
+          </div>
+
+          <div class="form-group">
+
+            <label for="timePosted">Time Posted</label>
+            <input type='date' id="timePosted" [(ngModel)]="newQuote.timePosted" name="timePosted" #timePosted="ngModel" required>
+            <div [hidden]="timePosted.valid || timePosted.pristine" class="alert alert-danger">
+              <p>Date is required</p>
+            </div>
+          </div>
+          <button type="submit" class="btn">Add Quote</button>
         </form>
       </div>
     </div>

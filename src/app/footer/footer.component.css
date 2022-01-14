@@ -1,0 +1,26 @@
+.ifooter {
+  background-color: black;
+  color: white;
+  font-family: 'Luxurious Roman', cursive;
+}
+
+#improve-des {
+  font-size: 12px;
+  text-align: center;
+}
+
+h4 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 700;
+  color: #24E493;
+}
+
+#signature {
+  font-size: 13px;
+  text-align: center;
+}
+
+.fa {
+  font-size: 38px;
+}

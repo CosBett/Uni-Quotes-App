@@ -13,6 +13,7 @@ import { QuoteDetailsComponent } from './quote-details/quote-details.component';
 import { VoteHighlightDirective } from './vote-highlight.directive';
 import { DateAgoPipe } from './date-ago.pipe';
 import { FormsModule } from '@angular/forms';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { FormsModule } from '@angular/forms';
     DownVoteComponent,
     QuoteDetailsComponent,
     VoteHighlightDirective,
-    DateAgoPipe
+    DateAgoPipe,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

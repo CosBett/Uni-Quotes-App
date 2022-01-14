@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DownVoteComponent implements OnInit {
 
+  totalNumber: number = 0;
   constructor() { }
 
   ngOnInit(): void {
   }
-
+  totalDownvote() {
+    this.totalNumber++
+  }
 }

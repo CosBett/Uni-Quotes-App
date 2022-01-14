@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { from } from 'rxjs';
 import { Quote } from '../quote';
-
 @Component({
   selector: 'app-form',
   templateUrl: './form.component.html',
@@ -15,7 +15,7 @@ export class FormComponent implements OnInit {
   submitQuote(form: any) {
     this.addQuote.emit(form)
 
-    form.reset(this.submitQuote)
+    form.reset()
   }
 
 

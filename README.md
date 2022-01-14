@@ -1,6 +1,6 @@
 # Uni-Quotes-App
 
-<a href="https://cosbett.github.io/UniQuotes-Website/" > Live Demo link</a>
+<a href="https://cosbett.github.io/Uni-Quotes-App/" > Live Demo link</a>
 ####  This quote web application inspires you with a variety of quotes and gives you opportunity to inspire others by adding and voting your favorite inspiring quotes.It also enable you to down vote and delete terrible quotes. 
 Latest version - 11th Jan 2022
 #### By **Cosmas Bett**
@@ -21,8 +21,8 @@ This web application inspires you with a variety of quotes and gives you opportu
 3. Open and edit with a code editor of your preference.
 
 ### Usage Instruction,
-1. Open your browser (preferably google chrome and active internet connection is required.) and paste the link below; https://cosbett.github.io/UniQuotes-Website/
- or <a href="https://cosbett.github.io/UniQuotes-Website/" > Click here</a> to acess the 
+1. Open your browser (preferably google chrome and active internet connection is required.) and paste the link below; https://cosbett.github.io/Uni-Quotes-App/
+ or <a href="https://cosbett.github.io/Uni-Quotes-App//" > Click here</a> to acess the 
 2. Depending on your needs you can easily maneuver around the page.
 3. The page provides well label buttons to make usage easily understandable and interative.
 
